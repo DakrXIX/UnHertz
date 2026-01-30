@@ -1,20 +1,18 @@
 from flask import Flask
+from app.config import Config
 from app.extensions import db
 from sqlalchemy import text
+from pathlib import Path
+from dotenv import load_dotenv
+
+env_path = Path(__file__).resolve().parents[1] / ".env"
+load_dotenv(dotenv_path=env_path)
 
 def create_app():
     app = Flask(__name__)
-
-    app.config["SQLALCHEMY_DATABASE_URI"] = (
-        "postgresql://postgres:postgres@localhost:5432/unhertz"
-    )
-    app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+    app.config.from_object(Config)
 
     db.init_app(app)
-
-    @app.route("/")
-    def health():
-        return {"status": "ok"}
 
     @app.route("/db-check")
     def db_check():
@@ -22,8 +20,3 @@ def create_app():
         return {"db": "connected"}
 
     return app
-
-
-if __name__ == "__main__":
-    app = create_app()
-    app.run(debug=True)
