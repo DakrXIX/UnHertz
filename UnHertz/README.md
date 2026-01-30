@@ -1,8 +1,8 @@
-# 🎧 Audio Platform
+# 🎧 UnHertz
 
-Audio Platform es una aplicación web que permite a los usuarios **subir, organizar y reproducir archivos de audio**, con un sistema de acceso controlado basado en **invitaciones, compartición entre usuarios y grupos**.
+UnHertz es una aplicación web que permite a los usuarios **subir, organizar y reproducir archivos de audio**, con un sistema de acceso controlado basado en **invitaciones, compartición entre usuarios y grupos**.
 
-El proyecto está pensado como una **plataforma personal de streaming de audio**, similar en concepto a Spotify, pero enfocada en contenido propio y privado. También funciona como un **proyecto de portfolio**, orientado a demostrar diseño de sistemas, arquitectura y buenas prácticas de desarrollo.
+El proyecto está pensado como una **plataforma de streaming de audio**, similar en concepto a Tidal, BandCamp, Itunes pero enfocada en comunidades curadas y mejor acceso de demos para Artistas. También funciona como un **proyecto de portfolio**, orientado a demostrar diseño de sistemas, arquitectura y buenas prácticas de desarrollo.
 
 ---
 
@@ -76,3 +76,4 @@ All rights reserved.
 This software is provided for educational and portfolio purposes only.
 No part of this project may be used, copied, modified, or distributed
 without explicit permission from the author.
+
