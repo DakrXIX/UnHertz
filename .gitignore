@@ -1,0 +1,8 @@
+venv*
+BackEnd/venv
+UnHertz\UnHertz\BackEnd\venv
+
+# Environment variables
+.env
+*.env
+**/.env
